@@ -178,7 +178,7 @@ Get started in 3 simple steps:
 pip install -r requirements.txt
 
 # 2. Set your API key (optional - included in config)
-export PARALLEL_AI_API_KEY="uhvDr1sW9RKu-NyRirCC2ivqpQiwHFtXseHeMFJB"
+export PARALLEL_AI_API_KEY="xxxxxxxxxxxxxxxxxxxxx"
 
 # 3. Launch the web interface
 streamlit run streamlit_app.py
@@ -242,7 +242,7 @@ The service can be configured through environment variables:
 
 Create a `.env` file in the project root:
 ```env
-PARALLEL_AI_API_KEY=uhvDr1sW9RKu-NyRirCC2ivqpQiwHFtXseHeMFJB
+PARALLEL_AI_API_KEY=
 PROCESSOR=pro
 MAX_RESULTS=5
 LOG_LEVEL=INFO
