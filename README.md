@@ -242,7 +242,7 @@ The service can be configured through environment variables:
 
 Create a `.env` file in the project root:
 ```env
-PARALLEL_AI_API_KEY=uhvDr1sW9RKu-NyRirCC2ivqpQiwHFtXseHeMFJB
+PARALLEL_AI_API_KEY=
 PROCESSOR=pro
 MAX_RESULTS=5
 LOG_LEVEL=INFO
