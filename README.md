@@ -39,7 +39,7 @@ This tool is designed for use by insurance companies to help determine reimburse
    
    **Option A: Environment Variable (Recommended)**
    ```bash
-   export PARALLEL_AI_API_KEY="uhvDr1sW9RKu-NyRirCC2ivqpQiwHFtXseHeMFJB"
+   export PARALLEL_AI_API_KEY="XXXXXXXXXXXXXXXXXXXXXXXX"
    ```
    
    **Option B: Command Line**
