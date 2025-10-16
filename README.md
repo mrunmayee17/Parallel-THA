@@ -44,7 +44,7 @@ This tool is designed for use by insurance companies to help determine reimburse
    
    **Option B: Command Line**
    ```bash
-   python main.py search "your item" --api-key "uhvDr1sW9RKu-NyRirCC2ivqpQiwHFtXseHeMFJB"
+   python main.py search "your item" --api-key "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
    ```
 
 ## Usage
