@@ -5,6 +5,7 @@
 ### When Human Review is Needed:
 
 **Search API Output Issues:**
+
 • **Web content parsing challenges** - Search API returns raw web content that's difficult to parse consistently
 
 • **Generic search results** - Example: "black leather couch" returns same Amazon search link for first 3 results
@@ -14,6 +15,7 @@
 • **Fast but imprecise** - Search API is quick but lacks specificity in results
 
 **Cases Requiring Human Cross-Check:**
+
 • **Ambiguous item descriptions** - Generic terms like "black leather couch" need clarification
 
 • **Multiple similar results** - When API returns identical or very similar links
@@ -26,6 +28,7 @@
 
 
 ### Why Human Review Matters:
+
 • **Quality assurance** - Ensures accurate product matching vs. generic search results
 
 • **Cost control** - Prevents over/under reimbursement from imprecise matching
@@ -42,6 +45,7 @@
 ### What Worked Well:
 
 **Task API Strengths:**
+
 • **High accuracy** - Task API (3-4 minutes with base processor) provides exact/specific product links
 
 • **Structured output** - Returns precise Amazon product URLs rather than search results
@@ -54,6 +58,7 @@
 ### Documentation & Experience Issues:
 
 **Critical Documentation Gaps:**
+
 • **Best Practices** - Limited guidance on optimal prompt construction
 
 • **Error Recovery** - Insufficient examples of handling partial or malformed responses  
@@ -65,6 +70,7 @@
 • **Integration Patterns** - Missing common architectural patterns for production use
 
 **Specific Pain Points:**
+
 • **Search API parsing complexity** - Difficult to extract structured data from web content
 
 • **Response format inconsistency** - Multiple JSON formats requiring complex parsing strategies
@@ -76,6 +82,7 @@
 ### Improvement Recommendations:
 
 **High Priority:**
+
 • **Comprehensive examples** - Real-world integration patterns and error handling
 
 • **Processor selection guide** - Clear criteria for choosing base/pro/ultra
@@ -86,6 +93,7 @@
 
 
 **Medium Priority:**
+
 • **Schema design guide** - Best practices for Task API output schemas
 
 • **Performance optimization docs** - When to use Search vs Task API
