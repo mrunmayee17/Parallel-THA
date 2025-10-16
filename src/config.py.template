@@ -1,0 +1,41 @@
+"""Configuration management for the Insurance Item Matcher service."""
+
+import os
+from typing import Optional
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+
+class Config:
+    """Configuration settings for the Insurance Item Matcher."""
+    
+    # API Configuration
+    PARALLEL_AI_API_KEY: str = os.getenv("PARALLEL_AI_API_KEY", "YOUR_API_KEY_HERE")
+    PARALLEL_AI_BASE_URL: str = "https://api.parallel.ai"
+    
+    # Service Configuration
+    MAX_RESULTS: int = int(os.getenv("MAX_RESULTS", "5"))
+    MAX_CHARS_PER_RESULT: int = int(os.getenv("MAX_CHARS_PER_RESULT", "6000"))
+    PROCESSOR: str = os.getenv("PROCESSOR", "pro")  # base, pro, or ultra
+    
+    # Request Configuration
+    REQUEST_TIMEOUT: int = int(os.getenv("REQUEST_TIMEOUT", "120"))
+    RETRY_ATTEMPTS: int = int(os.getenv("RETRY_ATTEMPTS", "3"))
+    
+    # Logging Configuration
+    LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
+    
+    @classmethod
+    def validate(cls) -> None:
+        """Validate required configuration."""
+        if not cls.PARALLEL_AI_API_KEY or cls.PARALLEL_AI_API_KEY == "YOUR_API_KEY_HERE":
+            raise ValueError("PARALLEL_AI_API_KEY is required. Please set it in your environment or update config.py")
+        
+        if cls.PROCESSOR not in ["base", "pro", "ultra"]:
+            raise ValueError("PROCESSOR must be one of: base, pro, ultra")
+
+
+# Validate configuration on import
+Config.validate()
